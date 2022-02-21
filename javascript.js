@@ -4,6 +4,7 @@ for (var i = 0; i < 255; i++) {
 }
 
 function originalColor(box) {
+  clearRadio();
   box.style.backgroundColor = "wheat";
 }
 
@@ -76,4 +77,11 @@ for (var i = 0; i < 255; i++) {
   document
     .getElementById("btn")
     .addEventListener("click", () => originalColor(box));
+}
+function clearRadio() {
+  let radioButton = document.querySelectorAll("input[type=radio]");
+  for (let i = 0; i < radioButton.length; i++) {
+    let radioStatus = radioButton[i];
+    radioStatus.checked = false;
+  }
 }
