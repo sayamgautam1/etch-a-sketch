@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: burlywood;
+  align-items: center;
+}
+header img {
+  height: 200px;
+}
+#container {
+  margin-top: 20px;
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#container .box {
+  background-color: wheat;
+  width: 31.25px;
+  height: 31.25px;
+  border: black 1px solid;
+  border-radius: 5px;
+}
+
+#buttons {
+  margin-top: 10px;
+}
+
+#btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: sandybrown;
+}
+
+#message {
+  color: #484848;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer;
+}
+#message span {
+  transition: 0.5s linear;
+}
+#message:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+#message:hover span:nth-child(1):after {
+  content: "'";
+}
+#message:hover span:nth-child(2) {
+  margin-left: 30px;
+}
+#message:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}

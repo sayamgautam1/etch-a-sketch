@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/main.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://www.spinmaster.com/static/936fbbc2ce27366ea0446b71b98491ea/49b19/F20-Etch_A_Sketch-Logo.png"
+        alt="etch a sketch"
+      />
+    </header>
+    <section id="container"></section>
+
+    <form id="buttons">
+      <input
+        type="radio"
+        id="button1"
+        name="color_type"
+        value="red"
+        onchange="check(event)"
+      />
+      <label for="button1">Red</label>
+      <input
+        type="radio"
+        id="button2"
+        name="color_type"
+        value="rainbow"
+        onchange="check(event)"
+      />
+      <label for="button2">Rainbow</label>
+      <input
+        type="radio"
+        id="button3"
+        name="color_type"
+        value="black"
+        onchange="check(event)"
+      />
+      <label for="button3">Black</label>
+    </form>
+    <button type="submit" onclick="check(event)" id="btn">RESET</button>
+    <section id="message">
+      <span>Hover </span> <span> mouse </span> <span> to </span>
+      <span> change </span> <span> color </span> <span> !!!</span>
+    </section>
+    <script src="/javascript.js"></script>
+  </body>
+</html>
