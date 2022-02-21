@@ -73,7 +73,6 @@ function check(e) {
 
 for (var i = 0; i < 255; i++) {
   let box = document.getElementById(`box${i}`);
-  // box.addEventListener("mouseover",()=> colorChange(box));
   document
     .getElementById("btn")
     .addEventListener("click", () => originalColor(box));
